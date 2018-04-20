@@ -206,7 +206,7 @@ function loadCounterwalletConfigFromServer() {
 
     //Init list of restricted areas
     if (data['restrictedAreas']) {
-      assert(data['restrictedAreas'] instanceof Array, "'restrictedAreas' field in returned counterwallet.conf.json file is not an array");
+      assert(data['restrictedAreas'] instanceof Object, "'restrictedAreas' field in returned counterwallet.conf.json file is not an object");
       $.jqlog.debug("Restricted Areas: " + data['restrictedAreas']);
     }
     restrictedAreas(data['restrictedAreas'] || []);

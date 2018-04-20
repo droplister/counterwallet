@@ -1,6 +1,6 @@
 {
     "servers": [],
-    "RESTRICTED_AREA": {
+    "restrictedAreas": {
       "pages/betting.html": ["US"],
       "pages/openbets.html": ["US"],
       "pages/matchedbets.html": ["US"],
