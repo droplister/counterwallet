@@ -156,9 +156,6 @@ function LogonViewModel() {
         MESSAGE_FEED.init(data['last_message_index'], data['cw_last_message_seq']);
         //^ set the "starting" message_index, under which we will ignore if received on the messages feed
 
-        console.log(restrictedAreas);
-        console.log(disabledFeatures);
-
         // set user country
         USER_COUNTRY = data['country'];
         if (restrictedAreas['pages/betting.html'] && restrictedAreas['pages/betting.html'].indexOf(USER_COUNTRY) != -1) {

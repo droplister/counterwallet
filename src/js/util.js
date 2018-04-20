@@ -84,8 +84,6 @@ function expireDate(expire_index) {
 
 function checkCountry(action, callback) {
 
-  console.log(restrictedAreas);
-
   if (restrictedAreas[action] && restrictedAreas[action].indexOf(USER_COUNTRY) != -1) {
     var message = i18n.t('forbiden_country');
 
