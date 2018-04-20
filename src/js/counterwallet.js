@@ -209,6 +209,7 @@ function loadCounterwalletConfigFromServer() {
       assert(data['restrictedAreas'] instanceof Object, "'restrictedAreas' field in returned counterwallet.conf.json file is not an object");
       $.jqlog.debug("Restricted Areas: " + data['restrictedAreas']);
     }
+    console.log(data['restrictedAreas']);
     restrictedAreas(data['restrictedAreas'] || []);
   }).fail(function() {
     //File not found, just use the local box as the API server
