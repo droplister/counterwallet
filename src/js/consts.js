@@ -207,7 +207,7 @@ var DISABLED_FEATURES_SUPPORTED = ['betting', 'dividend', 'exchange', 'leaderboa
 var DISABLED_FEATURES = []; //set in counterwallet.js
 
 // restricted action
-var RESTRICTED_AREA = ''; // set in counterwallet.js
+var RESTRICTED_AREA = []; // set in counterwallet.js
 
 var RESTRICTED_AREA_MESSAGE = {
   'pages/simplebuy.html': 'buy_xcp_if_legal'

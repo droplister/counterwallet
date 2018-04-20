@@ -157,6 +157,7 @@ function LogonViewModel() {
         //^ set the "starting" message_index, under which we will ignore if received on the messages feed
 
         console.log(restrictedAreas);
+        console.log(disabledFeatures);
 
         // set user country
         USER_COUNTRY = data['country'];
